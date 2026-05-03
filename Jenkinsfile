@@ -31,6 +31,18 @@ pipeline {
                 sh 'mvn test'
             }
         }
+
+        stage('SonarQube Analysis') {
+            steps {
+                // Runs static code analysis
+             }
+        }
+
+        stage('Quality Gate') {
+            steps {
+                 // Checks if quality gate passed
+            }
+        }
     }
 }
     
