@@ -16,7 +16,7 @@ pipeline {
 
         stage('checkout - Pull code from GitHub') {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/Utpalksingh/register-app.git'
+                git branch: 'master', credentialsId: 'github', url: 'https://github.com/Utpalksingh/register-app.git'
             }
         }
         
